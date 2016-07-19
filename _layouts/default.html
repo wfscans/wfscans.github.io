@@ -13,11 +13,14 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <script type="type/javascript">
-     var logo=document.getElementById('logo');
+    var logo=document.getElementById('logo');
+    console.log("Logo Switch");
     if (Math.random() < 0.5 ? 1 : 2 == 1) {
-      logo.src = "http://i.imgur.com/av5VSFE.png"
+      logo.src = "http://i.imgur.com/av5VSFE.png";
+      console.log("Version 1");
     } else {
-      logo.src = "http://i.imgur.com/V9sxqqT.png"
+      logo.src = "http://i.imgur.com/V9sxqqT.png";
+      console.log("Version 2");
     }
     </script>
 
