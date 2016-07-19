@@ -15,10 +15,12 @@
     <script type="text/javascript">
       if (Math.random() < 0.5 ? 1 : 2 == 1)
       { 
-      document.getElementById('logo').src = "https://i.imgur.com/av5VSFE.png";
+      //document.getElementById('logo').src = "https://i.imgur.com/av5VSFE.png";
+      document.getElementById('logo').setAttribute("src", "https://i.imgur.com/av5VSFE.png");
       console.log("Version 1");
       } else {
-      document.getElementById('logo').src = "https://i.imgur.com/V9sxqqT.png";
+      //document.getElementById('logo').src = "https://i.imgur.com/V9sxqqT.png";
+      document.getElementById('logo').setAttribute("src", "https://i.imgur.com/V9sxqqT.png");
       console.log("Version 2");
       }
       </script>
