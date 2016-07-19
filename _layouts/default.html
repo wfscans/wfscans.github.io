@@ -15,7 +15,7 @@
     <script type="type/javascript">
     var logo=document.getElementById('logo');
     console.log("Logo Switch");
-    function switchL() {
+    function switchLogo() {
     if (Math.random() < 0.5 ? 1 : 2 == 1) {
       logo.src = "https://i.imgur.com/av5VSFE.png";
       console.log("Version 1");
@@ -25,13 +25,12 @@
     }
     }
     
-    window.onload = switchL;
     </script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body onload="switchLogo();">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
