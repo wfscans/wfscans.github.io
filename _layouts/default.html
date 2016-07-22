@@ -14,20 +14,20 @@
     
     <script type="text/javascript">
       window.onload = function () {
-      var tmpInt = Math.floor(Math.random() * 3) + 1;
-      if (tmpInt == 1)
-      { 
-      //document.getElementById('logo').src = "https://i.imgur.com/av5VSFE.png";
-      document.getElementById('logo').setAttribute("src", "https://i.imgur.com/av5VSFE.png");
-      console.log("Version 1");
-      } else if (tmpInt == 2) {
-      //document.getElementById('logo').src = "https://i.imgur.com/V9sxqqT.png";
-      document.getElementById('logo').setAttribute("src", "https://i.imgur.com/V9sxqqT.png");
-      console.log("Version 2");
-      } else {
-      document.getElementById('logo').setAttribute("src", "https://i.imgur.com/tYXocHE.png");
-      console.log("Version 3");
-      }
+      var tmpInt = Math.floor(Math.random() * 100) + 1;
+       if (tmpInt >= 75) {
+        document.getElementById('logo').setAttribute("src", "http://i.imgur.com/T1SJJsE.png");
+        console.log("Akne " + tmpInt);
+       } else if (tmpInt >= 50) {
+        console.log("Amamiya " + tmpInt);
+        document.getElementById('logo').setAttribute("src", "https://i.imgur.com/av5VSFE.png");
+       } else if (tmpInt >= 25) {
+        console.log("Touko " + tmpInt);
+        document.getElementById('logo').setAttribute("src", "https://i.imgur.com/V9sxqqT.png");
+       } else {
+        console.log("Ruu " + tmpInt);
+        document.getElementById('logo').setAttribute("src", "https://i.imgur.com/tYXocHE.png");
+       }
       }
       </script>
 
