@@ -1,11 +1,11 @@
 {% if site.disqus %}
-div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
 this.page.url = "{{ site.baseurl }}{{ page.url }}"; // <--- use canonical URL
 this.page.identifier = "{{ page.id }}";
 };
-(function() { // DON'T EDIT BELOW THIS LINE
+(function() {
 var d = document, s = d.createElement('script');
 
 s.src = 'waterflamescans.disqus.com/embed.js'; // <--- use Disqus shortname
